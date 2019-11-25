@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let fruit of fruitsList; let i=index" [ngStyle]="{'background-color': fruit.color}">
+    {{fruit.name}} {{i}}
+    <button *ngIf="i > 0" (click)="upClick(i)">arriba</button>
+  </li>
+</ul>
